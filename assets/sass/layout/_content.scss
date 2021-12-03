@@ -1,0 +1,69 @@
+.user{
+    &__profile{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+.video{
+    padding: 2em 1em;
+    h2{
+        font-size: 1.5em;
+        text-align: center;
+        font-family: $montserrat;
+        font-weight: $semi-bold;
+        margin-bottom: 1em;
+    }
+    &__item{
+        margin: 1em 0;
+        img{
+            max-width: 100%;
+        }
+        h4{
+            font-size: 1.5em;
+            font-family: $montserrat;
+            font-weight: $bold;
+            margin: 0.5em 0;
+        }
+        p{
+            color: $color-gris;
+            font-family: $open-sans;
+        }
+    }
+}
+
+
+@media (min-width: $breakpoint-desktop){
+    header{
+        .user{
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .contact{
+                display: flex;
+                align-items: center;
+                &__buttons{
+                    display: flex;
+                    .button{
+                        margin-left: 1em;
+                    }
+                }
+                
+            }
+        }
+    }
+    .video{
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 2em 0;
+        h2{
+            text-align: left;
+            font-size: 2em;
+        }
+        &__item{
+            padding: 0 1em;
+        }
+    }
+}
